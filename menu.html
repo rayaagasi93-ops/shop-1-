@@ -1,0 +1,270 @@
+<!doctype html><html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menu & Ordering | Maharlika Food Street</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+             <a class="logo" href="index.html">
+    <img
+        class="logo-mark"
+        src="assets/Brown and Beige Vintage Circle Bakery Logo.jpg"
+        alt="Sample Restaurant L"
+        width="48"
+        height="48"
+    >
+
+    <span class="logo-text">
+        Sample Restaurant
+        <small>LOVE • SERVE • FOOD</small>
+    </span>
+</a>
+            <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a class="active" href="menu.html">Menu</a>
+                <a class="button button-dark" href="menu.html">Order now ↗</a>
+            </nav>
+        </header>
+        <main>
+            <section class="page-banner">
+                <div class="container">
+                    <p class="eyebrow">SOMETHING DELICIOUS AWAITS</p>
+                    <h1>The menu.</h1>
+                    <p>Browse your favorites, add them to your cart, and send your order directly to us.</p>
+                </div>
+            </section>
+            <section class="section container menu-layout">
+                <div>
+                    <div class="menu-title">
+                        <div>
+                            <p class="eyebrow">MADE FOR YOUR CRAVINGS</p>
+                            <h2>Find your <em>favorite.</em></h2>
+                        </div>
+                    </div>
+                    <div class="filters">
+                        <button class="filter active" data-filter="All">All</button>
+                        <button class="filter" data-filter="Rice Meals">Rice Meals</button>
+                        <button class="filter" data-filter="Snacks">Snacks</button>
+                        <button class="filter" data-filter="Drinks">Drinks</button>
+                    </div>
+                    <div class="food-grid menu-grid" id="menu-grid">
+                        <article class="food-card" data-id="chicken" data-category="Rice Meals" data-price="149">
+                            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=900&q=85" alt="Crispy Chicken Rice" loading="lazy"><div class="food-card-content">
+                                <h3>Crispy Chicken Rice</h3>
+                                <p>Golden crispy chicken, steamed rice and a savory dip.</p>
+                                <div class="food-card-bottom">
+                                    <span class="price">₱149.00</span>
+                                    <button class="add-button" type="button">+ Add to cart</button>
+                                </div>
+                            </div>
+                        </article>
+<article class="food-card" data-id="pork" data-category="Rice Meals" data-price="169">
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Grilled Pork Plate" loading="lazy">
+    <div class="food-card-content">
+        <h3>Grilled Pork Plate</h3>
+        <p>Smoky, savory grilled pork served with rice.</p>
+        <div class="food-card-bottom">
+            <span class="price">₱169.00</span>
+            <button class="add-button" type="button">+ Add to cart</button>
+        </div>
+    </div>
+</article>
+<article class="food-card" data-id="beef" data-category="Rice Meals" data-price="179">
+    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85" alt="Beef & Garlic Rice" loading="lazy">
+    <div class="food-card-content">
+        <h3>Beef & Garlic Rice</h3>
+        <p>Tender beef and fragrant garlic rice.</p>
+        <div class="food-card-bottom">
+            <span class="price">₱179.00</span>
+            <button class="add-button" type="button">+ Add to cart</button>
+        </div>
+    </div>
+</article>
+<article class="food-card" data-id="snack" data-category="Snacks" data-price="89">
+    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=85" alt="Crispy Snack Bites" loading="lazy">
+    <div class="food-card-content">
+        <h3>Crispy Snack Bites</h3>
+        <p>A crunchy little treat made for sharing.</p>
+        <div class="food-card-bottom">
+            <span class="price">₱89.00</span>
+            <button class="add-button" type="button">+ Add to cart</button>
+        </div>
+    </div>
+</article>
+<article class="food-card" data-id="calamansi" data-category="Drinks" data-price="55">
+    <img src="https://images.unsplash.com/photo-1513558161293-cacf870e9c1b?auto=format&fit=crop&w=900&q=85" alt="Citrus Cooler" loading="lazy">
+    <div class="food-card-content">
+        <h3>Citrus Cooler</h3>
+        <p>A bright and refreshing citrus drink.</p>
+        <div class="food-card-bottom">
+            <span class="price">₱55.00</span>
+            <button class="add-button" type="button">+ Add to cart</button>
+        </div>
+    </div>
+</article>
+<article class="food-card" data-id="tea" data-category="Drinks" data-price="49">
+    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85" alt="House Iced Tea" loading="lazy">
+    <div class="food-card-content">
+        <h3>House Iced Tea</h3>
+        <p>Cool, lightly sweet tea to pair with your meal.</p>
+        <div class="food-card-bottom">
+            <span class="price">₱49.00</span>
+            <button class="add-button" type="button">+ Add to cart</button>
+        </div>
+    </div>
+</article>
+</div>
+</div>
+<aside class="cart">
+    <div class="cart-top">
+        <div>
+            <p class="eyebrow">YOUR PICKS</p>
+            <h2>Your cart <span id="cart-count">(0)</span></h2>
+        </div>
+        <button class="clear-cart" id="clear-cart">Clear</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cart-total">₱0.00</strong>
+    </div>
+    <button class="button button-dark full" id="open-checkout">Continue to checkout</button>
+    <p class="cart-note">Delivery fees and final availability are confirmed by the restaurant.</p>
+</aside>
+</section>
+</main>
+<div class="modal-overlay" id="checkout-modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+        <button class="close-modal" id="close-checkout" aria-label="Close checkout">×</button>
+        <p class="eyebrow">ALMOST THERE</p>
+        <h2 id="checkout-title">Complete your order.</h2>
+        <!-- Replace the WhatsApp number below with the restaurant's real WhatsApp number, e.g. 639XXXXXXXXX. -->
+         <form class="checkout-form" id="checkout-form">
+            <label>Your name<input name="name" required placeholder="Full name"></label>
+            <label>Phone number<input name="phone" required type="tel" placeholder="09XX XXX XXXX"></label>
+            <label>Order type<select name="fulfillment"><option>Delivery</option><option>Pickup</option></select></label>
+            <label>Delivery address<textarea name="address" rows="2" placeholder="House number, street, barangay, city"></textarea></label>
+            <label>Payment preference<select name="payment"><option>GCash (manual confirmation)</option><option>Maya (manual confirmation)</option><option>Cash on delivery/pickup</option></select></label>
+            <label>Notes<textarea name="notes" rows="2" placeholder="Optional instructions"></textarea></label>
+            
+            <button class="button button-dark full" type="submit">
+            Prepare Messenger Order
+            </button>
+
+<p class="form-note">
+    Review your order summary, copy it, and send it to us through Messenger.
+    No payment is collected on this website.
+</p>
+        </form>
+    </section>
+</div>
+
+
+<!-- ORDER SUMMARY MODAL -->
+<div class="modal-overlay" id="summary-modal" aria-hidden="true">
+
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="summary-title">
+
+        <button
+            class="close-modal"
+            id="close-summary"
+            type="button"
+            aria-label="Close order summary"
+        >×</button>
+
+        <p class="eyebrow">READY TO SEND</p>
+
+        <h2 id="summary-title">Your order summary.</h2>
+
+        <p class="form-note">
+            Copy your order details, then open Messenger and paste
+            them into our conversation.
+        </p>
+
+        <pre class="order-summary-text" id="order-summary-text"></pre>
+
+        <button
+            class="button button-dark full"
+            id="copy-order"
+            type="button"
+        >
+            Copy Order Summary
+        </button>
+
+        <a
+            class="button button-messenger full"
+            id="open-messenger"
+            href="https://www.messenger.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Paste to Messenger ↗
+        </a>
+
+        <p class="form-note">
+            Messenger will open in a new tab.
+            Paste your copied summary into the chat and press Send.
+        </p>
+
+    </section>
+
+</div>
+
+ <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <p class="footer-brand">Sample Restaurant</p>
+
+                    <p>
+                        Foods served with love. Where ever bite sizzles.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="menu.html">Menu & Ordering</a>
+                        <a href="https://www.messenger.com/t/1019015674619752" target="_blank" rel="noopener">Facebook ↗</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Visit or say hello</h3>
+
+                    <div class="footer-links">
+                        <a href="tel:+63912345678">0912 345 678</a>
+                            
+                        <a
+                            href="https://maps.app.goo.gl/m28ijBKgzpSa6NDw7"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Manila, Metro Manila ↗
+                        </a>
+
+                        <span>Sample hours: 10 AM – 10 PM</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>© Website by MarkupHive. All rights reserved.</span>
+                <span>Sample Sample</span>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
